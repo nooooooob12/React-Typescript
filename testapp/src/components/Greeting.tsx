@@ -1,4 +1,5 @@
 import React from 'react';
+import './Greeting.scss'
 
 type GreetingProps = {
     name:string;
@@ -30,6 +31,7 @@ function Greetings({name,mark,optional,onClick}:GreetingProps) {
     const handleronClick = () => onClick(name);
     return(
         <>
+        <div className='Greeting'>
             <div>
                 Hello, {name}{mark}
                 {optional && <p>{optional}</p>}
@@ -37,6 +39,7 @@ function Greetings({name,mark,optional,onClick}:GreetingProps) {
             <div>
                 <button onClick={handleronClick}>ClickMe</button>
             </div>
+        </div>
         </>
     )
 }

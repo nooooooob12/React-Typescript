@@ -1,11 +1,13 @@
 import React from 'react';
-import Greeting from './Greeting'
+import Counter from './components/Counter';
+import Greeting from './components/Greeting'
 
 const App:React.FC=()=>{
   const onClick = (name:string)=>{
-    console.log(`${name} says hello`);
+    alert(`${name} says hello`);
   }
-  return <Greeting name="React" onClick={onClick}/>
+  return <Counter/>
+  // return <Greeting name="React" onClick={onClick}/>
 }
 
 export default App;
