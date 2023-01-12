@@ -29,8 +29,8 @@ function Myform({onSubmit}:MyformsProps) {
     return (
         <div>
             <form action="" onSubmit={handlerSubmit}>
-                <input name='name' value={name} onChange={onChange} />
-                <input name='description' value={description} onChange={onChange} />
+                이름:<input name='name' value={name} onChange={onChange} /> <br />
+                설명:<input name='description' value={description} onChange={onChange} /> <br />
             <button type='submit'>등록하기</button>
             </form>
         </div>
