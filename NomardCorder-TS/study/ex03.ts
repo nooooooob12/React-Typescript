@@ -54,3 +54,8 @@ const nico = PlayerMaker() // argument가 없기 떄문에 에러 발생
 console.log(PlayerMaker('nico'))
 //만약 age라는 것을 더 만들고 싶다! 한다면 아규먼트 뒤에 Alias를 주면됨
 nico.age = 12
+
+
+//Arrow 함수는 아래와 같은 방식으로도 만들수 있음
+
+const PlayerMakers = (name:string):Player => ({name})
