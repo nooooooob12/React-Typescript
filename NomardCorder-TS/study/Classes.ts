@@ -34,7 +34,7 @@ abstract class User {
 class Player2 extends User{
  getNickName(arg:string){
     console.log(this.nickName) // 만약 nickname이 private로 구성되어 있다면, 상속을 받았더라도 사용할수 없음.
-    //그래서 왜냐하면 protected를 사용하는걸 권장함. 상속받은 단계에선 접근을 허용할 수 있기 때문!
+    //그래서 protected를 사용하는걸 권장함. 상속받은 단계에선 접근을 허용할 수 있기 때문!
  }
  }
 
